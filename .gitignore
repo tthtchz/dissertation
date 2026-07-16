@@ -1,0 +1,14 @@
+# data (fetched separately / mounted from Drive, not committed)
+CGMacros/
+bio.csv
+*.pkl
+processed/
+processed_*/
+checkpoints/
+*.pt
+
+# notebook / python noise
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
