@@ -1,5 +1,5 @@
 # data (fetched separately / mounted from Drive, not committed)
-CGMacros/
+CGMacros
 bio.csv
 *.pkl
 processed/
