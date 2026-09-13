@@ -1,13 +1,9 @@
 # data (fetched separately / mounted from Drive, not committed)
 CGMacros
 dataset
-
-*.json
-*.pkl
 checkpoints/
 
 # notebook / python noise
 .ipynb_checkpoints/
 __pycache__/
-*.pyc
 .DS_Store

@@ -1,0 +1,148 @@
+{
+  "model": "Persistence",
+  "participant_ids": [
+    "CGMacros-008",
+    "CGMacros-014",
+    "CGMacros-019",
+    "CGMacros-020",
+    "CGMacros-034",
+    "CGMacros-039"
+  ],
+  "per_horizon_summary": {
+    "15": {
+      "rmse": {
+        "mean": 12.78119157358641,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 2.2912512863702297
+      },
+      "mae": {
+        "mean": 8.325674214651555,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 1.7174418401476845
+      },
+      "grmse": {
+        "mean": 14.096346570803187,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 3.4509910132699178
+      },
+      "zone_a": {
+        "mean": 95.9743498396865,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 1.9831445054188561
+      },
+      "zone_ab": {
+        "mean": 99.86343664647904,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 0.1877238535434119
+      }
+    },
+    "30": {
+      "rmse": {
+        "mean": 20.490797622303567,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 4.7335314933867725
+      },
+      "mae": {
+        "mean": 13.23460445719208,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 3.3036858298308633
+      },
+      "grmse": {
+        "mean": 23.202396103561576,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 6.937536503676309
+      },
+      "zone_a": {
+        "mean": 88.8730554565966,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 2.9949492789802643
+      },
+      "zone_ab": {
+        "mean": 99.64968531053319,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 0.3117291803348363
+      }
+    },
+    "60": {
+      "rmse": {
+        "mean": 30.42941451084105,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 10.230985549164691
+      },
+      "mae": {
+        "mean": 19.468852390561114,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 6.864739088244044
+      },
+      "grmse": {
+        "mean": 35.324541226785634,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 14.060855815486823
+      },
+      "zone_a": {
+        "mean": 79.38487115544473,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 5.411032340482142
+      },
+      "zone_ab": {
+        "mean": 98.98468115425722,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 0.8716903063632762
+      }
+    },
+    "90": {
+      "rmse": {
+        "mean": 37.392822019085344,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 14.43037454625673
+      },
+      "mae": {
+        "mean": 24.028002304455555,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 9.708557270705374
+      },
+      "grmse": {
+        "mean": 43.73233194348345,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 19.50791754784854
+      },
+      "zone_a": {
+        "mean": 72.81795511221945,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 7.954690225661559
+      },
+      "zone_ab": {
+        "mean": 98.12967581047381,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 1.9911599527052266
+      }
+    },
+    "120": {
+      "rmse": {
+        "mean": 42.090455845567675,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 17.539275188394615
+      },
+      "mae": {
+        "mean": 27.33795374566352,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 11.991286665771351
+      },
+      "grmse": {
+        "mean": 49.27897323074737,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 23.41547988812647
+      },
+      "zone_a": {
+        "mean": 68.3173019831374,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 10.20058230663465
+      },
+      "zone_ab": {
+        "mean": 97.21529509559434,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 3.348044450200762
+      }
+    }
+  }
+}

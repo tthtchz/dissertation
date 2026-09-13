@@ -1,0 +1,148 @@
+{
+  "model": "LinearRegression",
+  "participant_ids": [
+    "CGMacros-008",
+    "CGMacros-014",
+    "CGMacros-019",
+    "CGMacros-020",
+    "CGMacros-034",
+    "CGMacros-039"
+  ],
+  "per_horizon_summary": {
+    "15": {
+      "rmse": {
+        "mean": 11.572044722687323,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 2.028027739745041
+      },
+      "mae": {
+        "mean": 7.724506606231506,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 1.488107605265097
+      },
+      "grmse": {
+        "mean": 12.82388110379387,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 3.230075622965956
+      },
+      "zone_a": {
+        "mean": 96.53841586509915,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 2.443840073047533
+      },
+      "zone_ab": {
+        "mean": 99.86343664647904,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 0.20945288089962202
+      }
+    },
+    "30": {
+      "rmse": {
+        "mean": 19.249422408473364,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 4.190987960482568
+      },
+      "mae": {
+        "mean": 12.627820202412723,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 2.8176879932484242
+      },
+      "grmse": {
+        "mean": 22.429726626981772,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 7.028524460396454
+      },
+      "zone_a": {
+        "mean": 89.88243676522978,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 3.6944575447112253
+      },
+      "zone_ab": {
+        "mean": 99.61406008787554,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 0.4126481499559208
+      }
+    },
+    "60": {
+      "rmse": {
+        "mean": 28.139189305141034,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 9.62528832840721
+      },
+      "mae": {
+        "mean": 18.25741259741752,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 5.99753365858441
+      },
+      "grmse": {
+        "mean": 34.545928201946644,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 15.103542595313483
+      },
+      "zone_a": {
+        "mean": 81.19581997387483,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 5.397117373723587
+      },
+      "zone_ab": {
+        "mean": 98.84811780073625,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 1.2358752080143238
+      }
+    },
+    "90": {
+      "rmse": {
+        "mean": 33.62255456587816,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 13.68714929877719
+      },
+      "mae": {
+        "mean": 21.895808688560194,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 8.536255764677664
+      },
+      "grmse": {
+        "mean": 42.16271398627393,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 21.0882356073724
+      },
+      "zone_a": {
+        "mean": 75.24047025293908,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 8.260658759119858
+      },
+      "zone_ab": {
+        "mean": 98.04655029093931,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 2.468539175913616
+      }
+    },
+    "120": {
+      "rmse": {
+        "mean": 36.956162853082944,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 16.544513911497624
+      },
+      "mae": {
+        "mean": 24.205918395164083,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 10.551627801119034
+      },
+      "grmse": {
+        "mean": 46.78980168571344,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 25.242063696990353
+      },
+      "zone_a": {
+        "mean": 71.10200688754304,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 9.394943785800363
+      },
+      "zone_ab": {
+        "mean": 97.32810830067687,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 3.952634107098015
+      }
+    }
+  }
+}
