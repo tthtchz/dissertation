@@ -14,27 +14,37 @@ def set_seed(seed: int):
     torch.cuda.manual_seed_all(seed)
 
 
+def _default_forward_fn(model: nn.Module, batch, device):
+    cgm, target = batch
+    return model(cgm.to(device)), target.to(device)
+
+
 @torch.no_grad()
-def predict(model: nn.Module, loader, device=None):
+def predict(model: nn.Module, loader, device=None, forward_fn=None):
     device = device or ('cuda' if torch.cuda.is_available() else 'cpu')
     model = model.to(device).eval()
+    forward_fn = forward_fn or _default_forward_fn
     preds, trues = [], []
-    for cgm, target in loader:
-        preds.append(model(cgm.to(device)).cpu().numpy())
-        trues.append(target.numpy())
+    for batch in loader:
+        y_pred, target = forward_fn(model, batch, device)
+        preds.append(y_pred.cpu().numpy())
+        trues.append(target.cpu().numpy())
     return np.concatenate(preds), np.concatenate(trues)
 
 
 def train_model(model: nn.Module, train_loader, val_loader, cgm_mean: float, cgm_std: float,
-                 device=None, lr: float = 1e-3, weight_decay: float = 1e-4,
-                 max_grad_norm: float = 1.0, max_epochs: int = 50, early_stop_patience: int = 10,
-                 lr_patience: int = 5, lr_factor: float = 0.5, checkpoint_dir=None,
-                 verbose: bool = True, progress_bar: bool = False, progress_desc: str = 'training'):
-
+                device=None, lr: float = 1e-3, weight_decay: float = 1e-4,
+                max_grad_norm: float = 1.0, max_epochs: int = 50, early_stop_patience: int = 10,
+                lr_patience: int = 5, lr_factor: float = 0.5, checkpoint_dir=None,
+                verbose: bool = True, progress_bar: bool = False, progress_desc: str = 'training',
+                forward_fn=None):
+    # local import: the training loop doesn't need metrics.py's gRMSE/CEG machinery, only
+    # rmse()/mae() for logging
     from src import metrics as metrics_module
 
     device = device or ('cuda' if torch.cuda.is_available() else 'cpu')
     model = model.to(device)
+    forward_fn = forward_fn or _default_forward_fn
 
     if verbose or progress_bar:
         device_label = device
@@ -44,6 +54,7 @@ def train_model(model: nn.Module, train_loader, val_loader, cgm_mean: float, cgm
         print(f"device: {device_label}  model: {model.__class__.__name__}  "
               f"params: {n_params:,}")
 
+    # Shared optimisation settings are used across model and modality comparisons.
     optimizer = torch.optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
         optimizer, mode='min', factor=lr_factor, patience=lr_patience)
@@ -62,23 +73,24 @@ def train_model(model: nn.Module, train_loader, val_loader, cgm_mean: float, cgm
     for epoch in epoch_iter:
         model.train()
         train_loss_sum, train_n = 0.0, 0
-        for cgm, target in train_loader:
-            cgm, target = cgm.to(device), target.to(device)
+        for batch in train_loader:
+            y_pred, target = forward_fn(model, batch, device)
             optimizer.zero_grad()
-            loss = criterion(model(cgm), target)
+            loss = criterion(y_pred, target)
             loss.backward()
+
+            # Clip gradients to reduce instability during neural-network training.
             nn.utils.clip_grad_norm_(model.parameters(), max_grad_norm)
             optimizer.step()
-            # weight each batch's contribution by its actual sample count, not by batch index --
-            # the last batch of an epoch is usually smaller than batch_size (e.g. 76 of 256 here)
-            # and would otherwise be counted as equally important as a full batch.
-            batch_n = cgm.size(0)
+            batch_n = target.size(0)
             train_loss_sum += loss.item() * batch_n
             train_n += batch_n
 
-        y_pred_norm, y_true_norm = predict(model, val_loader, device=device)
+        # Validation is used for checkpoint selection; the test set is never accessed here.
+        y_pred_norm, y_true_norm = predict(model, val_loader, device=device, forward_fn=forward_fn)
         val_loss = float(np.mean((y_pred_norm - y_true_norm) ** 2))
 
+        # Convert back to mg/dL only for interpretable validation metrics.
         y_pred_mgdl = y_pred_norm * cgm_std + cgm_mean
         y_true_mgdl = y_true_norm * cgm_std + cgm_mean
         val_rmse = [metrics_module.rmse(y_pred_mgdl[:, i], y_true_mgdl[:, i])
@@ -97,9 +109,11 @@ def train_model(model: nn.Module, train_loader, val_loader, cgm_mean: float, cgm
                   f"  val_loss={val_loss:.4f}  val_rmse(mg/dL)={[round(r, 1) for r in val_rmse]}")
         if progress_bar:
             epoch_iter.set_postfix(train_loss=f"{history['train_loss'][-1]:.4f}",
-                                    val_loss=f"{val_loss:.4f}", best=f"{best_val_loss:.4f}")
+                                   val_loss=f"{val_loss:.4f}", best=f"{best_val_loss:.4f}")
 
         final_state = {k: v.clone().cpu() for k, v in model.state_dict().items()}
+
+        # Retain the checkpoint with the lowest validation MSE.
         if val_loss < best_val_loss:
             best_val_loss = val_loss
             best_state = final_state
@@ -123,5 +137,6 @@ def train_model(model: nn.Module, train_loader, val_loader, cgm_mean: float, cgm
         with open(checkpoint_dir / 'history.json', 'w') as f:
             json.dump(history, f, indent=2)
 
+    # Return the best validation checkpoint rather than the final epoch.
     model.load_state_dict(best_state)
     return model, history
