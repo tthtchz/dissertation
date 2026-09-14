@@ -1,0 +1,216 @@
+{
+  "seeds": [
+    7,
+    14,
+    21,
+    28,
+    35,
+    42,
+    49,
+    56,
+    63,
+    70
+  ],
+  "img_proj_dim": 4,
+  "per_horizon": {
+    "resnet18": {
+      "15": {
+        "candidate_rmse_mean": 10.568229742101021,
+        "candidate_rmse_sd": 0.06742898475015344,
+        "improvement_pct_mean": 0.11151447982671807,
+        "improvement_pct_sd": 0.07847644737057173,
+        "wins": 10,
+        "n_seeds": 10
+      },
+      "30": {
+        "candidate_rmse_mean": 16.669974825207845,
+        "candidate_rmse_sd": 0.05560351112832542,
+        "improvement_pct_mean": 0.20822298974080472,
+        "improvement_pct_sd": 0.05627688334582431,
+        "wins": 10,
+        "n_seeds": 10
+      },
+      "60": {
+        "candidate_rmse_mean": 23.984542225914126,
+        "candidate_rmse_sd": 0.07184889452806127,
+        "improvement_pct_mean": 0.4242765801234468,
+        "improvement_pct_sd": 0.09090852926699565,
+        "wins": 10,
+        "n_seeds": 10
+      },
+      "90": {
+        "candidate_rmse_mean": 28.276656174373432,
+        "candidate_rmse_sd": 0.06617849463494392,
+        "improvement_pct_mean": 0.4876675654505097,
+        "improvement_pct_sd": 0.12608723207563932,
+        "wins": 10,
+        "n_seeds": 10
+      },
+      "120": {
+        "candidate_rmse_mean": 31.07562654528153,
+        "candidate_rmse_sd": 0.07409239274293937,
+        "improvement_pct_mean": 0.6215672650998935,
+        "improvement_pct_sd": 0.1428947490493142,
+        "wins": 10,
+        "n_seeds": 10
+      }
+    },
+    "vit": {
+      "15": {
+        "candidate_rmse_mean": 10.573735949515815,
+        "candidate_rmse_sd": 0.07187414624889141,
+        "improvement_pct_mean": 0.05973679750034459,
+        "improvement_pct_sd": 0.042171532344540574,
+        "wins": 9,
+        "n_seeds": 10
+      },
+      "30": {
+        "candidate_rmse_mean": 16.692503588523465,
+        "candidate_rmse_sd": 0.06632513609153007,
+        "improvement_pct_mean": 0.07355932824690942,
+        "improvement_pct_sd": 0.07092103843179452,
+        "wins": 8,
+        "n_seeds": 10
+      },
+      "60": {
+        "candidate_rmse_mean": 24.067895471313115,
+        "candidate_rmse_sd": 0.0770601712214836,
+        "improvement_pct_mean": 0.0782170460273504,
+        "improvement_pct_sd": 0.1491161978041828,
+        "wins": 8,
+        "n_seeds": 10
+      },
+      "90": {
+        "candidate_rmse_mean": 28.390887353891976,
+        "candidate_rmse_sd": 0.06935954788381363,
+        "improvement_pct_mean": 0.08555528885564562,
+        "improvement_pct_sd": 0.21093649379339474,
+        "wins": 8,
+        "n_seeds": 10
+      },
+      "120": {
+        "candidate_rmse_mean": 31.21253825585029,
+        "candidate_rmse_sd": 0.08004495413094666,
+        "improvement_pct_mean": 0.18369986067309693,
+        "improvement_pct_sd": 0.1901262465020163,
+        "wins": 8,
+        "n_seeds": 10
+      }
+    },
+    "clip": {
+      "15": {
+        "candidate_rmse_mean": 10.558516860548114,
+        "candidate_rmse_sd": 0.06802092763647724,
+        "improvement_pct_mean": 0.20334600823039123,
+        "improvement_pct_sd": 0.08941980413377637,
+        "wins": 10,
+        "n_seeds": 10
+      },
+      "30": {
+        "candidate_rmse_mean": 16.639898947901244,
+        "candidate_rmse_sd": 0.05717684913951322,
+        "improvement_pct_mean": 0.3882893786474584,
+        "improvement_pct_sd": 0.07020350170626806,
+        "wins": 10,
+        "n_seeds": 10
+      },
+      "60": {
+        "candidate_rmse_mean": 23.93292499331185,
+        "candidate_rmse_sd": 0.07884361898709637,
+        "improvement_pct_mean": 0.6386049364605916,
+        "improvement_pct_sd": 0.1410294873453378,
+        "wins": 10,
+        "n_seeds": 10
+      },
+      "90": {
+        "candidate_rmse_mean": 28.21622364601609,
+        "candidate_rmse_sd": 0.08248590643466433,
+        "improvement_pct_mean": 0.7004073848824173,
+        "improvement_pct_sd": 0.1791718005564363,
+        "wins": 10,
+        "n_seeds": 10
+      },
+      "120": {
+        "candidate_rmse_mean": 31.0134379620549,
+        "candidate_rmse_sd": 0.08746467729112296,
+        "improvement_pct_mean": 0.8205187682755268,
+        "improvement_pct_sd": 0.16146528071596694,
+        "wins": 10,
+        "n_seeds": 10
+      }
+    },
+    "dinov2": {
+      "15": {
+        "candidate_rmse_mean": 10.552159465695727,
+        "candidate_rmse_sd": 0.06470973004091772,
+        "improvement_pct_mean": 0.26324419991259346,
+        "improvement_pct_sd": 0.10808908545828083,
+        "wins": 10,
+        "n_seeds": 10
+      },
+      "30": {
+        "candidate_rmse_mean": 16.61417654854645,
+        "candidate_rmse_sd": 0.05597608893254396,
+        "improvement_pct_mean": 0.5422280504189473,
+        "improvement_pct_sd": 0.10041477447720329,
+        "wins": 10,
+        "n_seeds": 10
+      },
+      "60": {
+        "candidate_rmse_mean": 23.897895290001593,
+        "candidate_rmse_sd": 0.06493893424245174,
+        "improvement_pct_mean": 0.7837863794443016,
+        "improvement_pct_sd": 0.2020691935062118,
+        "wins": 10,
+        "n_seeds": 10
+      },
+      "90": {
+        "candidate_rmse_mean": 28.195973658359595,
+        "candidate_rmse_sd": 0.06901557608809547,
+        "improvement_pct_mean": 0.7714438068960788,
+        "improvement_pct_sd": 0.23916424903502184,
+        "wins": 10,
+        "n_seeds": 10
+      },
+      "120": {
+        "candidate_rmse_mean": 31.02281079075339,
+        "candidate_rmse_sd": 0.08377313367786235,
+        "improvement_pct_mean": 0.7904482154321438,
+        "improvement_pct_sd": 0.20207889203163948,
+        "wins": 10,
+        "n_seeds": 10
+      }
+    }
+  },
+  "overall_ranking": [
+    {
+      "encoder": "dinov2",
+      "mean_improvement_pct": 0.630230130420813,
+      "total_wins": 50,
+      "total_pairs": 50,
+      "win_rate": 1.0
+    },
+    {
+      "encoder": "clip",
+      "mean_improvement_pct": 0.550233295299277,
+      "total_wins": 50,
+      "total_pairs": 50,
+      "win_rate": 1.0
+    },
+    {
+      "encoder": "resnet18",
+      "mean_improvement_pct": 0.3706497760482746,
+      "total_wins": 50,
+      "total_pairs": 50,
+      "win_rate": 1.0
+    },
+    {
+      "encoder": "vit",
+      "mean_improvement_pct": 0.0961536642606694,
+      "total_wins": 41,
+      "total_pairs": 50,
+      "win_rate": 0.82
+    }
+  ],
+  "selected_encoder": "dinov2"
+}

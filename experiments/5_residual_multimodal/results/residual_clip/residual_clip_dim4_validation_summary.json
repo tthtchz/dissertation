@@ -1,0 +1,39 @@
+{
+  "model": "CGM+time+clip (residual, image-only, dim=4)",
+  "seeds": [
+    7,
+    14,
+    21,
+    28,
+    35,
+    42,
+    49,
+    56,
+    63,
+    70
+  ],
+  "n_seeds": 10,
+  "img_proj_dim": 4,
+  "validation_summary": {
+    "15": {
+      "rmse_mean": 10.558516860548114,
+      "rmse_sd_across_seeds": 0.06802092763647724
+    },
+    "30": {
+      "rmse_mean": 16.639898947901244,
+      "rmse_sd_across_seeds": 0.05717684913951322
+    },
+    "60": {
+      "rmse_mean": 23.93292499331185,
+      "rmse_sd_across_seeds": 0.07884361898709637
+    },
+    "90": {
+      "rmse_mean": 28.21622364601609,
+      "rmse_sd_across_seeds": 0.08248590643466433
+    },
+    "120": {
+      "rmse_mean": 31.0134379620549,
+      "rmse_sd_across_seeds": 0.08746467729112296
+    }
+  }
+}
