@@ -51,7 +51,9 @@ Run the notebooks in this order, because later ones load checkpoints saved by ea
 | 8 | `experiments/6_final_multimodal/` | Final evaluation on the test split. |
 | 9 | `experiments/7_federated_learning/` | `fed0` → `fed1` → `fed2_cgm_only` → `fed2_cgm_time` → `fed2_cgm_time_image`. |
 
-A GPU is recommended: each neural experiment trains 10 seeds.
+All experiments in this repository were run on Google Colab with the **G4 GPU** runtime (NVIDIA
+RTX PRO 6000 Blackwell Server Edition). A GPU is recommended for reproducing them, because each
+neural experiment trains 10 seeds.
 
 ### 4. Find the results
 
