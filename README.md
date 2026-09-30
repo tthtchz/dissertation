@@ -21,15 +21,18 @@ pip install torch torchvision transformers numpy pandas scikit-learn xgboost \
 
 ### 2. Get the data
 
-Download CGMacros and place it at the repository root as `CGMacros/` (it contains the
-`CGMacros-0xx/` folders and `bio.csv`). The raw data is not committed.
+The processed data is committed in `processed_data/`, so the experiments run without the raw
+dataset:
 
-The processed CGM samples are already committed in `preprocessed_data/processed_5min/`. The code
-reads them from `processed_data/`, so link the two before running anything:
+| Path | Contents |
+|------|----------|
+| `processed_data/processed_5min/` | `train.pkl`, `val.pkl`, `test.pkl` (CGM windows, targets and meal information), `cgm_stats.json` (normalisation statistics), `split_participants.json` (participant split) |
+| `processed_data/img_preprocessing/` | `resolved_image_keys.json` (verified meal photographs), `missing_image_samples.json` (meals without a usable photograph) |
+| `processed_data/img_preprocessing/img_features/` | `img_features_{resnet18,vit,clip,dinov2}.pkl`, the image features from each encoder |
 
-```
-ln -s preprocessed_data processed_data
-```
+The raw data is not committed. It is only needed to rebuild `processed_data/` from scratch: in
+that case download CGMacros and place it at the repository root as `CGMacros/` (it contains the
+`CGMacros-0xx/` folders and `bio.csv`).
 
 ### 3. Run the notebooks
 
@@ -37,11 +40,13 @@ Every notebook works both on Google Colab and locally. The first cell sets `PROJ
 Colab it mounts Google Drive and expects the project at `MyDrive/dissertation`; locally it uses
 the repository root. No other configuration is needed.
 
-Run the notebooks in this order, because later ones load checkpoints saved by earlier ones:
+Run the notebooks in this order, because later ones load checkpoints saved by earlier ones.
+Steps 1 and 4 need the raw dataset and can be skipped, since their outputs are already in
+`processed_data/`.
 
 | Step | Notebooks | What it does |
 |------|-----------|--------------|
-| 1 | `preprocessing/cgm_preprocessing.ipynb`<br>`preprocessing/images_preprocessing.ipynb` | Builds the samples and the verified image list. The first can be skipped if you use the committed samples. |
+| 1 | `preprocessing/cgm_preprocessing.ipynb`<br>`preprocessing/images_preprocessing.ipynb` | Builds the samples and the verified image list. |
 | 2 | `experiments/1_baseline/` | CGM-only baselines. |
 | 3 | `experiments/2_best_cgm_encoders/` | Compares the baselines and tunes the GRU. |
 | 4 | `experiments/3_initial_multimodal/data_generation/` | Extracts image features with each encoder. |
@@ -65,5 +70,6 @@ are not committed.
 ## Layout
 
 - `preprocessing/` — turns the raw dataset into model-ready samples
+- `processed_data/` — the processed samples and image features used by every experiment
 - `src/` — shared code imported by the notebooks: data loaders, training loops, metrics, models
 - `experiments/` — one notebook per experiment, with its results
