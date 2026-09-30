@@ -1,0 +1,23 @@
+{
+  "n_original_participants": 45,
+  "excluded_participants": [
+    "CGMacros-007",
+    "CGMacros-018",
+    "CGMacros-026"
+  ],
+  "n_analytical_participants": 42,
+  "analytical_group_counts": {
+    "Healthy": 14,
+    "Prediabetes": 14,
+    "Type2Diabetes": 14
+  },
+  "released_1min_rows": 687580,
+  "released_dexcom_nonnull": 629825,
+  "released_libre_nonnull": 687360,
+  "dexcom_native_positions": 119415,
+  "dexcom_valid_readings": 119297,
+  "dexcom_coverage_pct": 99.90118494326508,
+  "dexcom_gap_events": 59,
+  "dexcom_gap_events_le_15min": 53,
+  "dexcom_gap_events_le_15min_pct": 89.83050847457628
+}

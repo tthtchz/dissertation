@@ -1,10 +1,12 @@
 # data (fetched separately / mounted from Drive, not committed)
 CGMacros
 CGMacros.zip
-dataset
+#dataset
 checkpoints/
 
 # notebook / python noise
 .ipynb_checkpoints/
 __pycache__/
 .DS_Store
+
+*.csv

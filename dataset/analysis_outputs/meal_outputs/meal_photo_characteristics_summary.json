@@ -1,0 +1,167 @@
+{
+  "retained_meal_photo_coverage": {
+    "n_participants": 42,
+    "n_meals": 1614,
+    "n_meals_with_photo": 1556,
+    "n_meals_without_photo": 58,
+    "pct_meals_with_photo": 96.40644361833952,
+    "n_csv_photo_records": 3040,
+    "meal_type_counts": {
+      "Dinner": 465,
+      "Breakfast": 411,
+      "Lunch": 410,
+      "Snack": 328
+    }
+  },
+  "meal_photo_by_group": [
+    {
+      "group": "Healthy",
+      "participants": 14,
+      "meal_events": 595,
+      "meals_with_photo": 576,
+      "meals_without_photo": 19,
+      "photo_records": 1106,
+      "mean_meals_per_participant": 42.5,
+      "mean_photos_per_participant": 79.0,
+      "meal_photo_coverage_pct": 96.80672268907563
+    },
+    {
+      "group": "Prediabetes",
+      "participants": 14,
+      "meal_events": 564,
+      "meals_with_photo": 538,
+      "meals_without_photo": 26,
+      "photo_records": 1125,
+      "mean_meals_per_participant": 40.285714285714285,
+      "mean_photos_per_participant": 80.35714285714286,
+      "meal_photo_coverage_pct": 95.39007092198581
+    },
+    {
+      "group": "Type2Diabetes",
+      "participants": 14,
+      "meal_events": 455,
+      "meals_with_photo": 442,
+      "meals_without_photo": 13,
+      "photo_records": 809,
+      "mean_meals_per_participant": 32.5,
+      "mean_photos_per_participant": 57.785714285714285,
+      "meal_photo_coverage_pct": 97.14285714285714
+    }
+  ],
+  "all_physical_images_retained42": {
+    "n_images": 3253,
+    "n_participants": 42,
+    "n_failed": 0,
+    "n_missing": 0,
+    "format_counts": {
+      "JPEG": 3253
+    },
+    "mode_counts": {
+      "RGB": 3253
+    },
+    "orientation_counts": {
+      "Portrait": 3134,
+      "Landscape": 119
+    },
+    "orientation_percent": {
+      "Portrait": 96.34183830310482,
+      "Landscape": 3.658161696895174
+    },
+    "width_px": {
+      "mean": 1028.572087304027,
+      "median": 900.0,
+      "min": 198,
+      "max": 2048
+    },
+    "height_px": {
+      "mean": 1727.4014755610206,
+      "median": 1600.0,
+      "min": 236,
+      "max": 2048
+    },
+    "file_size_kb": {
+      "mean": 182.1152148617622,
+      "median": 161.546875,
+      "min": 5.2685546875,
+      "max": 605.056640625
+    }
+  },
+  "meal_associated_images_retained42": {
+    "n_images": 1556,
+    "n_participants": 42,
+    "n_failed": 0,
+    "n_missing": 0,
+    "format_counts": {
+      "JPEG": 1556
+    },
+    "mode_counts": {
+      "RGB": 1556
+    },
+    "orientation_counts": {
+      "Portrait": 1500,
+      "Landscape": 56
+    },
+    "orientation_percent": {
+      "Portrait": 96.40102827763496,
+      "Landscape": 3.5989717223650386
+    },
+    "width_px": {
+      "mean": 1028.413881748072,
+      "median": 900.0,
+      "min": 213,
+      "max": 2048
+    },
+    "height_px": {
+      "mean": 1727.051413881748,
+      "median": 1600.0,
+      "min": 249,
+      "max": 2048
+    },
+    "file_size_kb": {
+      "mean": 189.37206842966742,
+      "median": 169.18359375,
+      "min": 5.2685546875,
+      "max": 511.65234375
+    }
+  },
+  "meal_photo_coverage_retained42": {
+    "n_participants": 42,
+    "n_meal_events": 1614,
+    "n_meal_events_with_image": 1556,
+    "n_meal_events_without_image": 58,
+    "coverage_percent": 96.40644361833952,
+    "n_unique_meal_associated_images": 1556
+  },
+  "tagged_untagged_pattern_42": {
+    "n_tagged": 1556,
+    "n_untagged": 1484,
+    "n_untagged_with_prior_tagged_within_60min": 0,
+    "pct_untagged_with_prior_tagged_within_60min": 0.0,
+    "gap_minutes_mean": 16.700543056633048,
+    "gap_minutes_median": 14.0,
+    "gap_minutes_q25": 9.0,
+    "gap_minutes_q75": 22.0
+  },
+  "nutrition_field_availability": {
+    "Calories": {
+      "Tagged": 1556,
+      "Untagged": 0
+    },
+    "Carbs": {
+      "Tagged": 1556,
+      "Untagged": 0
+    },
+    "Protein": {
+      "Tagged": 1556,
+      "Untagged": 0
+    },
+    "Fat": {
+      "Tagged": 1556,
+      "Untagged": 0
+    },
+    "Fiber": {
+      "Tagged": 1555,
+      "Untagged": 0
+    }
+  }
+}

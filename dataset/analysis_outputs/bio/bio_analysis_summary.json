@@ -1,0 +1,211 @@
+{
+  "n_cohort": 45,
+  "glycemic_group_counts": {
+    "Prediabetes": 16,
+    "Healthy": 15,
+    "Type2Diabetes": 14
+  },
+  "table1_continuous": [
+    {
+      "variable": "Age",
+      "Healthy mean (SD)": "38.7 (14.5)",
+      "Healthy median [IQR]": "40.0 [25.5-48.0]",
+      "Prediabetes mean (SD)": "51.6 (10.7)",
+      "Prediabetes median [IQR]": "54.0 [45.8-58.2]",
+      "Type2Diabetes mean (SD)": "54.2 (5.6)",
+      "Type2Diabetes median [IQR]": "52.5 [51.0-59.0]",
+      "Kruskal-Wallis p": 0.005675885786034422,
+      "ANOVA p": 0.000844854796850146
+    },
+    {
+      "variable": "BMI",
+      "Healthy mean (SD)": "28.1 (6.4)",
+      "Healthy median [IQR]": "25.8 [23.0-30.5]",
+      "Prediabetes mean (SD)": "33.4 (7.5)",
+      "Prediabetes median [IQR]": "32.8 [28.8-36.2]",
+      "Type2Diabetes mean (SD)": "31.8 (5.3)",
+      "Type2Diabetes median [IQR]": "30.6 [28.2-34.3]",
+      "Kruskal-Wallis p": 0.06914179187359507,
+      "ANOVA p": 0.08208008599857877
+    },
+    {
+      "variable": "Body weight",
+      "Healthy mean (SD)": "173.4 (40.1)",
+      "Healthy median [IQR]": "169.2 [141.6-191.0]",
+      "Prediabetes mean (SD)": "191.4 (41.1)",
+      "Prediabetes median [IQR]": "191.0 [163.7-206.1]",
+      "Type2Diabetes mean (SD)": "182.0 (22.5)",
+      "Type2Diabetes median [IQR]": "180.9 [168.6-197.7]",
+      "Kruskal-Wallis p": 0.25966563945711146,
+      "ANOVA p": 0.3869055101645146
+    },
+    {
+      "variable": "Height",
+      "Healthy mean (SD)": "65.8 (3.2)",
+      "Healthy median [IQR]": "66.0 [63.2-67.5]",
+      "Prediabetes mean (SD)": "63.6 (3.4)",
+      "Prediabetes median [IQR]": "62.8 [61.8-66.2]",
+      "Type2Diabetes mean (SD)": "63.7 (2.8)",
+      "Type2Diabetes median [IQR]": "64.0 [61.2-65.5]",
+      "Kruskal-Wallis p": 0.10588121732466206,
+      "ANOVA p": 0.10088203815055885
+    }
+  ],
+  "table1_categorical": {
+    "Gender": {
+      "counts": {
+        "Healthy": {
+          "F": 10,
+          "M": 5
+        },
+        "Prediabetes": {
+          "F": 11,
+          "M": 5
+        },
+        "Type2Diabetes": {
+          "F": 8,
+          "M": 6
+        }
+      },
+      "chi2_p": 0.7836790066353554,
+      "min_expected_count": 4.977777777777778
+    },
+    "Self-identify": {
+      "counts": {
+        "Healthy": {
+          "African American": 1,
+          "Black, African American": 0,
+          "Hispanic/Latino": 8,
+          "White": 6
+        },
+        "Prediabetes": {
+          "African American": 2,
+          "Black, African American": 1,
+          "Hispanic/Latino": 12,
+          "White": 1
+        },
+        "Type2Diabetes": {
+          "African American": 0,
+          "Black, African American": 0,
+          "Hispanic/Latino": 14,
+          "White": 0
+        }
+      },
+      "chi2_p": 0.024700262548926245,
+      "min_expected_count": 0.3111111111111111
+    }
+  },
+  "table1_labs": [
+    {
+      "variable": "A1c PDL (Lab)",
+      "Healthy mean (SD)": "5.2 (0.3)",
+      "Healthy median [IQR]": "5.3 [5.0-5.5]",
+      "Prediabetes mean (SD)": "6.0 (0.2)",
+      "Prediabetes median [IQR]": "6.0 [5.8-6.1]",
+      "Type2Diabetes mean (SD)": "7.2 (0.6)",
+      "Type2Diabetes median [IQR]": "7.1 [6.9-7.4]",
+      "Kruskal-Wallis p": 3.1504593008152672e-09,
+      "ANOVA p": 1.267396572585912e-16
+    },
+    {
+      "variable": "Fasting GLU - PDL (Lab)",
+      "Healthy mean (SD)": "95.7 (9.5)",
+      "Healthy median [IQR]": "96.0 [90.5-101.0]",
+      "Prediabetes mean (SD)": "116.2 (15.6)",
+      "Prediabetes median [IQR]": "110.5 [104.0-125.2]",
+      "Type2Diabetes mean (SD)": "152.6 (29.6)",
+      "Type2Diabetes median [IQR]": "149.0 [142.5-157.0]",
+      "Kruskal-Wallis p": 4.1130949764959187e-07,
+      "ANOVA p": 5.630225379336012e-09
+    },
+    {
+      "variable": "Insulin",
+      "Healthy mean (SD)": "9.7 (5.7)",
+      "Healthy median [IQR]": "9.3 [5.2-13.2]",
+      "Prediabetes mean (SD)": "17.9 (9.9)",
+      "Prediabetes median [IQR]": "17.5 [13.0-20.3]",
+      "Type2Diabetes mean (SD)": "14.8 (6.6)",
+      "Type2Diabetes median [IQR]": "13.2 [10.6-17.5]",
+      "Kruskal-Wallis p": 0.013733546042814094,
+      "ANOVA p": 0.016903300634929716
+    },
+    {
+      "variable": "Triglycerides",
+      "Healthy mean (SD)": "102.9 (62.9)",
+      "Healthy median [IQR]": "83.0 [64.0-122.0]",
+      "Prediabetes mean (SD)": "139.1 (69.6)",
+      "Prediabetes median [IQR]": "120.0 [98.0-148.5]",
+      "Type2Diabetes mean (SD)": "245.1 (274.3)",
+      "Type2Diabetes median [IQR]": "160.5 [124.5-248.0]",
+      "Kruskal-Wallis p": 0.007840844170069031,
+      "ANOVA p": 0.0614218744978699
+    },
+    {
+      "variable": "Cholesterol",
+      "Healthy mean (SD)": "186.5 (45.7)",
+      "Healthy median [IQR]": "178.0 [165.0-209.5]",
+      "Prediabetes mean (SD)": "191.3 (22.7)",
+      "Prediabetes median [IQR]": "195.0 [182.2-205.8]",
+      "Type2Diabetes mean (SD)": "197.6 (66.9)",
+      "Type2Diabetes median [IQR]": "178.0 [147.8-222.8]",
+      "Kruskal-Wallis p": 0.6863396798135899,
+      "ANOVA p": 0.8213223477021706
+    },
+    {
+      "variable": "HDL",
+      "Healthy mean (SD)": "59.5 (12.8)",
+      "Healthy median [IQR]": "57.0 [51.5-65.5]",
+      "Prediabetes mean (SD)": "49.6 (17.0)",
+      "Prediabetes median [IQR]": "46.5 [39.8-52.8]",
+      "Type2Diabetes mean (SD)": "46.4 (13.8)",
+      "Type2Diabetes median [IQR]": "43.5 [38.0-57.5]",
+      "Kruskal-Wallis p": 0.017812537407479328,
+      "ANOVA p": 0.05379553776336431
+    },
+    {
+      "variable": "Non HDL",
+      "Healthy mean (SD)": "127.0 (45.7)",
+      "Healthy median [IQR]": "127.0 [103.0-143.0]",
+      "Prediabetes mean (SD)": "141.7 (23.3)",
+      "Prediabetes median [IQR]": "140.0 [134.8-161.2]",
+      "Type2Diabetes mean (SD)": "151.1 (65.9)",
+      "Type2Diabetes median [IQR]": "126.5 [105.5-188.8]",
+      "Kruskal-Wallis p": 0.3892591662276723,
+      "ANOVA p": 0.38896865531996017
+    },
+    {
+      "variable": "LDL (Cal)",
+      "Healthy mean (SD)": "107.8 (38.7)",
+      "Healthy median [IQR]": "115.0 [87.5-124.0]",
+      "Prediabetes mean (SD)": "116.9 (21.8)",
+      "Prediabetes median [IQR]": "118.5 [105.5-132.2]",
+      "Type2Diabetes mean (SD)": "165.4 (191.5)",
+      "Type2Diabetes median [IQR]": "96.5 [81.0-153.5]",
+      "Kruskal-Wallis p": 0.6555098614698307,
+      "ANOVA p": 0.3272667179545026
+    },
+    {
+      "variable": "VLDL (Cal)",
+      "Healthy mean (SD)": "20.7 (12.6)",
+      "Healthy median [IQR]": "17.0 [13.0-24.5]",
+      "Prediabetes mean (SD)": "27.8 (13.9)",
+      "Prediabetes median [IQR]": "24.0 [19.5-29.5]",
+      "Type2Diabetes mean (SD)": "61.1 (99.0)",
+      "Type2Diabetes median [IQR]": "32.0 [25.0-49.8]",
+      "Kruskal-Wallis p": 0.007284315032242253,
+      "ANOVA p": 0.13116216064190728
+    },
+    {
+      "variable": "Cho/HDL Ratio",
+      "Healthy mean (SD)": "3.2 (1.0)",
+      "Healthy median [IQR]": "3.1 [2.7-3.8]",
+      "Prediabetes mean (SD)": "4.1 (1.0)",
+      "Prediabetes median [IQR]": "4.0 [3.6-5.0]",
+      "Type2Diabetes mean (SD)": "32.5 (105.8)",
+      "Type2Diabetes median [IQR]": "4.3 [3.2-5.5]",
+      "Kruskal-Wallis p": 0.041129550801814754,
+      "ANOVA p": 0.32404338171011815
+    }
+  ],
+  "n_missing_total": 0
+}
