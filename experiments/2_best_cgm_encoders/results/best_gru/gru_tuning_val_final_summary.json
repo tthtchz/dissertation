@@ -1,0 +1,173 @@
+{
+  "model": "GRU-tuned",
+  "best_params": {
+    "hidden_size": 256,
+    "num_layers": 3,
+    "dropout": 0.2,
+    "lr": 0.0001,
+    "weight_decay": 1e-05,
+    "batch_size": 256
+  },
+  "search_seed": 0,
+  "trial_seeds": [
+    7,
+    14,
+    21,
+    28,
+    35,
+    42,
+    49,
+    56,
+    63
+  ],
+  "n_trials": 40,
+  "final_seeds": [
+    7,
+    14,
+    21,
+    28,
+    35,
+    42,
+    49,
+    56,
+    63,
+    70
+  ],
+  "per_horizon_summary": {
+    "15": {
+      "rmse": {
+        "mean": 10.906389399428667,
+        "sd1_across_seeds": 0.09013775103302463,
+        "sd2_across_participants": 2.3440665413707396
+      },
+      "mae": {
+        "mean": 7.352936782145077,
+        "sd1_across_seeds": 0.12021619008386626,
+        "sd2_across_participants": 1.549940290239748
+      },
+      "grmse": {
+        "mean": 11.82640776062239,
+        "sd1_across_seeds": 0.14681950430536986,
+        "sd2_across_participants": 3.1801811170142753
+      },
+      "zone_a": {
+        "mean": 96.76145528406715,
+        "sd1_across_seeds": 0.15842121973515216,
+        "sd2_across_participants": 3.095303049288961
+      },
+      "zone_ab": {
+        "mean": 99.66067268056634,
+        "sd1_across_seeds": 0.019058862319939977,
+        "sd2_across_participants": 0.6656644607820607
+      }
+    },
+    "30": {
+      "rmse": {
+        "mean": 17.427088433627226,
+        "sd1_across_seeds": 0.061171398996062595,
+        "sd2_across_participants": 3.7919541821887175
+      },
+      "mae": {
+        "mean": 11.59800603102339,
+        "sd1_across_seeds": 0.1453286963730554,
+        "sd2_across_participants": 2.409912494538178
+      },
+      "grmse": {
+        "mean": 19.598591226736943,
+        "sd1_across_seeds": 0.13398616679064568,
+        "sd2_across_participants": 5.636515175116133
+      },
+      "zone_a": {
+        "mean": 89.92353187167691,
+        "sd1_across_seeds": 0.19975311038041832,
+        "sd2_across_participants": 5.576999624632703
+      },
+      "zone_ab": {
+        "mean": 99.33508572794074,
+        "sd1_across_seeds": 0.021456819399089763,
+        "sd2_across_participants": 0.9734255435212
+      }
+    },
+    "60": {
+      "rmse": {
+        "mean": 24.842496558187673,
+        "sd1_across_seeds": 0.029024387350184505,
+        "sd2_across_participants": 7.399464168400963
+      },
+      "mae": {
+        "mean": 16.521363146349977,
+        "sd1_across_seeds": 0.17039830264601669,
+        "sd2_across_participants": 4.695203519840453
+      },
+      "grmse": {
+        "mean": 29.36079733628166,
+        "sd1_across_seeds": 0.09817636222265243,
+        "sd2_across_participants": 11.05164788991623
+      },
+      "zone_a": {
+        "mean": 81.92424876037994,
+        "sd1_across_seeds": 0.24253802518497306,
+        "sd2_across_participants": 5.25390954809881
+      },
+      "zone_ab": {
+        "mean": 98.6731584921441,
+        "sd1_across_seeds": 0.01554024574556302,
+        "sd2_across_participants": 1.4514067975896585
+      }
+    },
+    "90": {
+      "rmse": {
+        "mean": 29.098333648514522,
+        "sd1_across_seeds": 0.0443539881572214,
+        "sd2_across_participants": 10.335607057300013
+      },
+      "mae": {
+        "mean": 19.594465244105294,
+        "sd1_across_seeds": 0.19984738269852248,
+        "sd2_across_participants": 6.800225861052854
+      },
+      "grmse": {
+        "mean": 35.0821530627884,
+        "sd1_across_seeds": 0.08607425758373567,
+        "sd2_across_participants": 15.158290214075857
+      },
+      "zone_a": {
+        "mean": 77.02789891869287,
+        "sd1_across_seeds": 0.41375262607684105,
+        "sd2_across_participants": 7.171659219502189
+      },
+      "zone_ab": {
+        "mean": 98.20658342792281,
+        "sd1_across_seeds": 0.027707791593964394,
+        "sd2_across_participants": 1.9572556799383434
+      }
+    },
+    "120": {
+      "rmse": {
+        "mean": 31.708852598829203,
+        "sd1_across_seeds": 0.06466780252627755,
+        "sd2_across_participants": 12.133176396486673
+      },
+      "mae": {
+        "mean": 21.711154591101824,
+        "sd1_across_seeds": 0.18113075741510898,
+        "sd2_across_participants": 8.269103732726663
+      },
+      "grmse": {
+        "mean": 38.568048141525246,
+        "sd1_across_seeds": 0.10494357747467133,
+        "sd2_across_participants": 17.861222584414758
+      },
+      "zone_a": {
+        "mean": 73.20807694605412,
+        "sd1_across_seeds": 0.417141155894697,
+        "sd2_across_participants": 8.493082609435936
+      },
+      "zone_ab": {
+        "mean": 97.89174980584264,
+        "sd1_across_seeds": 0.03431265587567878,
+        "sd2_across_participants": 2.4331459726613884
+      }
+    }
+  }
+}

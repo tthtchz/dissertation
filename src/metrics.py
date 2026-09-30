@@ -21,7 +21,7 @@ def mae(y_pred, y_true) -> float:
     return float(np.mean(np.abs(y_pred - y_true)))
 
 
-# ─────────────────────────── gRMSE (Del Favero et al. 2012; sqrt per Zhu et al. 2022) ───────────
+# ─────────────────────────── gRMSE  ───────────
 
 def _sigma_ge(x, a, eps):
 
@@ -43,10 +43,6 @@ def _sigma_le(x, a, eps):
                       [1.0, mid1, mid2, 0.0])
 
 
-# Table I, Del Favero et al. 2012. TL/TH are not the clinical hypo/hyperglycemia thresholds
-# themselves (70/180 mg/dL) -- they are set further out so the smooth penalty ramp is already
-# under way before the clinical threshold and fully saturated (2.5x / 2x) only well past it
-# (g<55 severe hypo, g>255 severe hyper).
 GRMSE_PARAMS = dict(alpha_L=1.5, beta_L=30.0, gamma_L=10.0, T_L=85.0,
                      alpha_H=1.0, beta_H=100.0, gamma_H=20.0, T_H=155.0)
 
@@ -67,7 +63,7 @@ def grmse(y_pred, y_true, **params) -> float:
     return float(np.sqrt(np.mean(weight * (y_pred - y_true) ** 2)))
 
 
-# ─────────────────────────── Clarke Error Grid (Clarke et al. 1987) ───────────────────────────
+# ─────────────────────────── Clarke Error Grid ───────────────────────────
 
 def clarke_error_grid_zones(y_true, y_pred) -> dict:
     ref, pred = _to_numpy(y_true), _to_numpy(y_pred)

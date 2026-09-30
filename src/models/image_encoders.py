@@ -7,7 +7,7 @@ IMG_SIZE = 224
 IMAGENET_MEAN = [0.485, 0.456, 0.406]
 IMAGENET_STD = [0.229, 0.224, 0.225]
 
-ENCODER_NAMES = ['resnet18', 'vit', 'gated_clip', 'dinov2']
+ENCODER_NAMES = ['resnet18', 'vit', 'clip', 'dinov2']
 
 
 class SquarePad:
@@ -48,7 +48,7 @@ def load_encoder(name: str, device: str = 'cpu'):
         feat_dim = 768
         forward_fn = lambda m, x: m(x)
 
-    elif name == 'gated_clip':
+    elif name == 'clip':
         from transformers import CLIPVisionModel
         model = CLIPVisionModel.from_pretrained('openai/clip-vit-base-patch16')
         feat_dim = 768

@@ -1,0 +1,49 @@
+{
+  "model": "Diagnostic 3b: frozen CGM+time + clip image-only residual (dim=4)",
+  "seeds": [
+    7,
+    14,
+    21,
+    28,
+    35,
+    42,
+    49,
+    56,
+    63,
+    70
+  ],
+  "n_seeds": 10,
+  "encoder": "clip",
+  "img_proj_dim": 4,
+  "best_epoch": {
+    "mean": 13.0,
+    "sd": 0.6666666666666666
+  },
+  "validation_summary": {
+    "15": {
+      "rmse_mean": 10.549043474936873,
+      "sd1_across_seeds": 0.060939749084581316,
+      "sd2_across_participants": 2.083466747631008
+    },
+    "30": {
+      "rmse_mean": 16.611474165435535,
+      "sd1_across_seeds": 0.07083309211829562,
+      "sd2_across_participants": 3.614445837120819
+    },
+    "60": {
+      "rmse_mean": 23.910758486675828,
+      "sd1_across_seeds": 0.06707674946376892,
+      "sd2_across_participants": 7.040958411344257
+    },
+    "90": {
+      "rmse_mean": 28.194679102366006,
+      "sd1_across_seeds": 0.06478207479956637,
+      "sd2_across_participants": 10.242546461549182
+    },
+    "120": {
+      "rmse_mean": 30.9889365706371,
+      "sd1_across_seeds": 0.07654236196655181,
+      "sd2_across_participants": 12.087511532836636
+    }
+  }
+}

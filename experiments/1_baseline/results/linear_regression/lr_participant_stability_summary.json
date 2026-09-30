@@ -11,19 +11,19 @@
   "per_horizon_summary": {
     "15": {
       "rmse": {
-        "mean": 11.572044722687323,
+        "mean": 11.572045043879237,
         "sd1_across_seeds": 0.0,
-        "sd2_across_participants": 2.028027739745041
+        "sd2_across_participants": 2.0280284531377966
       },
       "mae": {
-        "mean": 7.724506606231506,
+        "mean": 7.724506567856848,
         "sd1_across_seeds": 0.0,
-        "sd2_across_participants": 1.488107605265097
+        "sd2_across_participants": 1.4881077081988898
       },
       "grmse": {
-        "mean": 12.82388110379387,
+        "mean": 12.823882338042209,
         "sd1_across_seeds": 0.0,
-        "sd2_across_participants": 3.230075622965956
+        "sd2_across_participants": 3.230077456977496
       },
       "zone_a": {
         "mean": 96.53841586509915,
@@ -38,19 +38,19 @@
     },
     "30": {
       "rmse": {
-        "mean": 19.249422408473364,
+        "mean": 19.249422949878873,
         "sd1_across_seeds": 0.0,
-        "sd2_across_participants": 4.190987960482568
+        "sd2_across_participants": 4.190988300135911
       },
       "mae": {
-        "mean": 12.627820202412723,
+        "mean": 12.627820089370838,
         "sd1_across_seeds": 0.0,
-        "sd2_across_participants": 2.8176879932484242
+        "sd2_across_participants": 2.817687370735588
       },
       "grmse": {
-        "mean": 22.429726626981772,
+        "mean": 22.42972796417936,
         "sd1_across_seeds": 0.0,
-        "sd2_across_participants": 7.028524460396454
+        "sd2_across_participants": 7.0285258197623754
       },
       "zone_a": {
         "mean": 89.88243676522978,
@@ -65,19 +65,19 @@
     },
     "60": {
       "rmse": {
-        "mean": 28.139189305141034,
+        "mean": 28.13918981302875,
         "sd1_across_seeds": 0.0,
-        "sd2_across_participants": 9.62528832840721
+        "sd2_across_participants": 9.625288472193581
       },
       "mae": {
-        "mean": 18.25741259741752,
+        "mean": 18.25741291063807,
         "sd1_across_seeds": 0.0,
-        "sd2_across_participants": 5.99753365858441
+        "sd2_across_participants": 5.997533134688711
       },
       "grmse": {
-        "mean": 34.545928201946644,
+        "mean": 34.54592964046629,
         "sd1_across_seeds": 0.0,
-        "sd2_across_participants": 15.103542595313483
+        "sd2_across_participants": 15.103543922405727
       },
       "zone_a": {
         "mean": 81.19581997387483,
@@ -92,19 +92,19 @@
     },
     "90": {
       "rmse": {
-        "mean": 33.62255456587816,
+        "mean": 33.62255560544256,
         "sd1_across_seeds": 0.0,
-        "sd2_across_participants": 13.68714929877719
+        "sd2_across_participants": 13.687149759564333
       },
       "mae": {
-        "mean": 21.895808688560194,
+        "mean": 21.895809046313893,
         "sd1_across_seeds": 0.0,
-        "sd2_across_participants": 8.536255764677664
+        "sd2_across_participants": 8.536255884716685
       },
       "grmse": {
-        "mean": 42.16271398627393,
+        "mean": 42.16271589959155,
         "sd1_across_seeds": 0.0,
-        "sd2_across_participants": 21.0882356073724
+        "sd2_across_participants": 21.08823692067199
       },
       "zone_a": {
         "mean": 75.24047025293908,
@@ -119,19 +119,19 @@
     },
     "120": {
       "rmse": {
-        "mean": 36.956162853082944,
+        "mean": 36.95616358834148,
         "sd1_across_seeds": 0.0,
-        "sd2_across_participants": 16.544513911497624
+        "sd2_across_participants": 16.54451452490931
       },
       "mae": {
-        "mean": 24.205918395164083,
+        "mean": 24.20591882763844,
         "sd1_across_seeds": 0.0,
-        "sd2_across_participants": 10.551627801119034
+        "sd2_across_participants": 10.551627978159434
       },
       "grmse": {
-        "mean": 46.78980168571344,
+        "mean": 46.78980326937147,
         "sd1_across_seeds": 0.0,
-        "sd2_across_participants": 25.242063696990353
+        "sd2_across_participants": 25.242065060840545
       },
       "zone_a": {
         "mean": 71.10200688754304,

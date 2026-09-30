@@ -1,0 +1,148 @@
+{
+  "model": "LinearRegression",
+  "participant_ids": [
+    "CGMacros-005",
+    "CGMacros-016",
+    "CGMacros-027",
+    "CGMacros-044",
+    "CGMacros-046",
+    "CGMacros-048"
+  ],
+  "per_horizon_summary": {
+    "15": {
+      "rmse": {
+        "mean": 11.433494993818801,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 2.4472838523150537
+      },
+      "mae": {
+        "mean": 7.743643988081784,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 1.630646354560521
+      },
+      "grmse": {
+        "mean": 12.402746560329469,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 3.320765107682673
+      },
+      "zone_a": {
+        "mean": 96.1467232212199,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 3.717930986785246
+      },
+      "zone_ab": {
+        "mean": 99.78493338909134,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 0.40359361395040694
+      }
+    },
+    "30": {
+      "rmse": {
+        "mean": 18.394335864563544,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 4.045826692800049
+      },
+      "mae": {
+        "mean": 12.419597024341382,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 2.612351943145395
+      },
+      "grmse": {
+        "mean": 20.731377486992987,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 6.1223376687767965
+      },
+      "zone_a": {
+        "mean": 88.49393631638688,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 6.493834404442456
+      },
+      "zone_ab": {
+        "mean": 99.38467052990023,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 0.796884001849361
+      }
+    },
+    "60": {
+      "rmse": {
+        "mean": 25.858656468891507,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 7.78321477441407
+      },
+      "mae": {
+        "mean": 17.417319798480207,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 4.9813959894252235
+      },
+      "grmse": {
+        "mean": 30.664263767571683,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 11.93688992712407
+      },
+      "zone_a": {
+        "mean": 80.30945695680745,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 5.669845934727586
+      },
+      "zone_ab": {
+        "mean": 98.72154847959854,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 1.435209468010834
+      }
+    },
+    "90": {
+      "rmse": {
+        "mean": 30.247463990561155,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 10.8192391613616
+      },
+      "mae": {
+        "mean": 20.530107674178417,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 7.193750840994123
+      },
+      "grmse": {
+        "mean": 36.62942728122254,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 16.1677359465496
+      },
+      "zone_a": {
+        "mean": 74.87902503136388,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 7.707627806083211
+      },
+      "zone_ab": {
+        "mean": 98.17193380727642,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 2.0541296203369375
+      }
+    },
+    "120": {
+      "rmse": {
+        "mean": 32.9109911043194,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 12.622633529659476
+      },
+      "mae": {
+        "mean": 22.620519437119764,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 8.673606437817407
+      },
+      "grmse": {
+        "mean": 40.264769960603346,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 18.85101217120354
+      },
+      "zone_a": {
+        "mean": 71.59925921500687,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 9.09303267939738
+      },
+      "zone_ab": {
+        "mean": 97.81348945576198,
+        "sd1_across_seeds": 0.0,
+        "sd2_across_participants": 2.5734517960033814
+      }
+    }
+  }
+}

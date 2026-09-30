@@ -1,0 +1,59 @@
+{
+  "encoder": "vit",
+  "shared_config_sha256": "32e220271d6157119aec540c96162224e751d9f49207f511dc6cb171c77434d3",
+  "selection_data": "validation only",
+  "selection_rule": {
+    "primary": "maximise mean relative RMSE improvement versus seed-matched CGM+Time across all five horizons and ten seeds",
+    "tie_breaker_1": "maximise improved horizon-seed pairs",
+    "tie_breaker_2": "minimise mean validation RMSE",
+    "tie_breaker_3": "lower config_order"
+  },
+  "selected": {
+    "config_id": "cfg_17",
+    "config_order": 17,
+    "img_proj_dim": 4,
+    "img_dropout": 0.0,
+    "lr": 3e-05,
+    "weight_decay": 0.0,
+    "mean_relative_improvement_pct": 0.15182060703742525,
+    "improved_horizon_seed_pairs": 38,
+    "mean_validation_rmse": 22.15697026716728
+  },
+  "horizons": {
+    "15": {
+      "rmse_mean": 10.56623156309545,
+      "sd1_across_seeds": 0.0649665781028845,
+      "sd2_across_participants": 2.085831099049207,
+      "mean_improvement_pct_vs_cgm_time": 0.09193871899177905,
+      "improved_seeds_vs_cgm_time": 8
+    },
+    "30": {
+      "rmse_mean": 16.663564010571132,
+      "sd1_across_seeds": 0.07466237635529177,
+      "sd2_across_participants": 3.6123361043668023,
+      "mean_improvement_pct_vs_cgm_time": 0.10150867076331913,
+      "improved_seeds_vs_cgm_time": 8
+    },
+    "60": {
+      "rmse_mean": 24.036693573423587,
+      "sd1_across_seeds": 0.05899797480196237,
+      "sd2_across_participants": 7.030678127626318,
+      "mean_improvement_pct_vs_cgm_time": 0.13588853446063295,
+      "improved_seeds_vs_cgm_time": 7
+    },
+    "90": {
+      "rmse_mean": 28.34947811430037,
+      "sd1_across_seeds": 0.06541146455175954,
+      "sd2_across_participants": 10.24599578522143,
+      "mean_improvement_pct_vs_cgm_time": 0.18244689156634664,
+      "improved_seeds_vs_cgm_time": 7
+    },
+    "120": {
+      "rmse_mean": 31.168884074445856,
+      "sd1_across_seeds": 0.09270308828964802,
+      "sd2_across_participants": 12.105316735171407,
+      "mean_improvement_pct_vs_cgm_time": 0.24732021940504842,
+      "improved_seeds_vs_cgm_time": 8
+    }
+  }
+}

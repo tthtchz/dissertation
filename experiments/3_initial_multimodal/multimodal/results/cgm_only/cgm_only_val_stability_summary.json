@@ -1,0 +1,161 @@
+{
+  "model": "CGM-only (resolved)",
+  "seeds": [
+    7,
+    14,
+    21,
+    28,
+    35,
+    42,
+    49,
+    56,
+    63,
+    70
+  ],
+  "n_seeds": 10,
+  "participant_ids": [
+    "CGMacros-005",
+    "CGMacros-016",
+    "CGMacros-027",
+    "CGMacros-044",
+    "CGMacros-046",
+    "CGMacros-048"
+  ],
+  "per_horizon_summary": {
+    "15": {
+      "rmse": {
+        "mean": 10.69946417501669,
+        "sd1_across_seeds": 0.058934829379532164,
+        "sd2_across_participants": 2.1049310219119994
+      },
+      "mae": {
+        "mean": 7.255934603556215,
+        "sd1_across_seeds": 0.08358330973784468,
+        "sd2_across_participants": 1.4248648678984512
+      },
+      "grmse": {
+        "mean": 11.570706652944533,
+        "sd1_across_seeds": 0.12815230119523988,
+        "sd2_across_participants": 2.863605880210867
+      },
+      "zone_a": {
+        "mean": 96.8407214918985,
+        "sd1_across_seeds": 0.09697861985174319,
+        "sd2_across_participants": 3.078611246382106
+      },
+      "zone_ab": {
+        "mean": 99.6520941608071,
+        "sd1_across_seeds": 0.028888045881835727,
+        "sd2_across_participants": 0.6667187081527987
+      }
+    },
+    "30": {
+      "rmse": {
+        "mean": 17.012913034461857,
+        "sd1_across_seeds": 0.05672727150145342,
+        "sd2_across_participants": 3.2105058503546573
+      },
+      "mae": {
+        "mean": 11.457639888970416,
+        "sd1_across_seeds": 0.10412103888998359,
+        "sd2_across_participants": 2.1221404965525212
+      },
+      "grmse": {
+        "mean": 19.02164005982025,
+        "sd1_across_seeds": 0.11972311858092097,
+        "sd2_across_participants": 4.831674224311011
+      },
+      "zone_a": {
+        "mean": 90.09110363803117,
+        "sd1_across_seeds": 0.12712334884838344,
+        "sd2_across_participants": 5.498345099369527
+      },
+      "zone_ab": {
+        "mean": 99.36961173952918,
+        "sd1_across_seeds": 0.01855690148185318,
+        "sd2_across_participants": 0.9725539908703247
+      }
+    },
+    "60": {
+      "rmse": {
+        "mean": 24.404559098511534,
+        "sd1_across_seeds": 0.04304209432196429,
+        "sd2_across_participants": 6.824713306396778
+      },
+      "mae": {
+        "mean": 16.339060227335942,
+        "sd1_across_seeds": 0.12052553139978851,
+        "sd2_across_participants": 4.310070883393637
+      },
+      "grmse": {
+        "mean": 28.731256582745573,
+        "sd1_across_seeds": 0.14664750513692296,
+        "sd2_across_participants": 10.240759266475417
+      },
+      "zone_a": {
+        "mean": 81.9944970956894,
+        "sd1_across_seeds": 0.19349838182137152,
+        "sd2_across_participants": 5.081380794363417
+      },
+      "zone_ab": {
+        "mean": 98.77285233873434,
+        "sd1_across_seeds": 0.01442603759844143,
+        "sd2_across_participants": 1.3036794624757948
+      }
+    },
+    "90": {
+      "rmse": {
+        "mean": 28.8806247294865,
+        "sd1_across_seeds": 0.028417419338782716,
+        "sd2_across_participants": 10.155079896041547
+      },
+      "mae": {
+        "mean": 19.489743657096913,
+        "sd1_across_seeds": 0.14224010283653807,
+        "sd2_across_participants": 6.594012880144497
+      },
+      "grmse": {
+        "mean": 34.798281247993856,
+        "sd1_across_seeds": 0.154574306001195,
+        "sd2_across_participants": 14.904005700853581
+      },
+      "zone_a": {
+        "mean": 77.05594619382452,
+        "sd1_across_seeds": 0.3451488358888198,
+        "sd2_across_participants": 7.154376400937638
+      },
+      "zone_ab": {
+        "mean": 98.26903087740752,
+        "sd1_across_seeds": 0.026643987925992447,
+        "sd2_across_participants": 1.8168811941972542
+      }
+    },
+    "120": {
+      "rmse": {
+        "mean": 31.565547607605897,
+        "sd1_across_seeds": 0.038697565268387024,
+        "sd2_across_participants": 12.075473545322078
+      },
+      "mae": {
+        "mean": 21.622483133877843,
+        "sd1_across_seeds": 0.16092391272436807,
+        "sd2_across_participants": 8.056475365731377
+      },
+      "grmse": {
+        "mean": 38.344530947871974,
+        "sd1_across_seeds": 0.1701410932915655,
+        "sd2_across_participants": 17.735198472702947
+      },
+      "zone_a": {
+        "mean": 73.33659431366554,
+        "sd1_across_seeds": 0.3318533194325726,
+        "sd2_across_participants": 8.253561119360603
+      },
+      "zone_ab": {
+        "mean": 97.93579944970955,
+        "sd1_across_seeds": 0.03339023322738745,
+        "sd2_across_participants": 2.3149280334946356
+      }
+    }
+  }
+}

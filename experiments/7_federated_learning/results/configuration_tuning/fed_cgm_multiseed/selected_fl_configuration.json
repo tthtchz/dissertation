@@ -1,0 +1,33 @@
+{
+  "selection_metric": "lowest mean best validation loss across 10 tuning seeds",
+  "tuning_seeds": [
+    7,
+    14,
+    21,
+    28,
+    35,
+    42,
+    49,
+    56,
+    63,
+    70
+  ],
+  "local_epochs": 5,
+  "clients_per_round": 15,
+  "client_fraction": 0.5,
+  "early_stop_patience": 20,
+  "max_rounds": 100,
+  "lr_patience": 5,
+  "lr_factor": 0.5,
+  "learning_rate": 0.0001,
+  "weight_decay": 1e-05,
+  "batch_size": 256,
+  "max_grad_norm": 1.0,
+  "gru_hidden_size": 256,
+  "gru_num_layers": 3,
+  "gru_dropout": 0.2,
+  "mean_best_validation_loss": 0.409169340133667,
+  "sd_best_validation_loss": 0.009308579161328132,
+  "mean_best_round": 52.4,
+  "sd_best_round": 18.367846302105693
+}

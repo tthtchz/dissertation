@@ -12,7 +12,7 @@ def load_frozen_baseline(seed: int, exp2_checkpoint_dir: Path, device: str = 'cp
                           gru_dropout: float = 0.2, time_proj_dim: int = 16,
                           head_dropout: float = 0.2) -> CGMTimePredictor:
 
-    checkpoint_path = Path(exp2_checkpoint_dir) / f'exp2_cgm_time_seed{seed}' / 'best.pt'
+    checkpoint_path = Path(exp2_checkpoint_dir) / f'gated_cgm_time_seed{seed}' / 'best.pt'
     if not checkpoint_path.exists():
         raise FileNotFoundError(
             f"Exp2 checkpoint not found: {checkpoint_path}\n"
@@ -37,6 +37,7 @@ class FrozenImageOnlyResidualPredictor(nn.Module):
                  image_scale: float = 1.0, num_horizons: int = len(HORIZONS)):
         super().__init__()
         self.image_scale = image_scale
+
         self.gru = base_model.gru
         self.time_proj = base_model.time_proj
         self.base_head = base_model.head
