@@ -1,5 +1,6 @@
 # data (fetched separately / mounted from Drive, not committed)
 CGMacros
+CGMacros.zip
 dataset
 checkpoints/
 
